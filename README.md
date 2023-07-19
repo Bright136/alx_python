@@ -1,1 +1,3 @@
-# introducntion to Python
+# Introducntion to Python
+
+Simple python tasks
