@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import sys
 
-
 def print_args(*args):
     number_of_args = len(args)
     key_word = 'arguments:'
