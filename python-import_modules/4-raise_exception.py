@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def raise_exception():
-    raise ValueError('This exception was raise intentionally')
+    raise TypeError('This exception was raised intentionally')
 
 
 
