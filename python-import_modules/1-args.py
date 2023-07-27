@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import sys
 
 
 def print_args(*args):
@@ -13,4 +14,5 @@ def print_args(*args):
         print(f"{index}: {item}")
 
 if __name__=='__main__':
-    print_args()
+    arguments = sys.argv[1:]
+    print_args(*arguments)
