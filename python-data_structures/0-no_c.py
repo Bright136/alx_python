@@ -8,7 +8,7 @@ def no_c(my_string):
     return ''.join(list_string)
 
 
-print(no_c("Holberton School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))
+# print(no_c("Holberton School"))
+# print(no_c("Chicago"))
+# print(no_c("C is fun!"))
             
