@@ -7,5 +7,5 @@ def raise_exception():
 
 
 if __name__=='__main__':
-    raise_exception_msg()
+    raise_exception()
 
