@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def raise_exception_msg():
+def raise_exception():
     raise ValueError('This exception was raise intentionally')
 
 
