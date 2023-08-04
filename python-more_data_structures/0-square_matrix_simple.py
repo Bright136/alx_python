@@ -11,21 +11,27 @@
 
 def square_matrix_simple(matrix=[]):
     new_matrix = []
+    new_list= []
     for arr in matrix:
-        for i in range(len(arr)):
-            arr[i] = arr[i] ** 2
-        new_matrix.append(arr)
+        new_list = [arr[i] ** 2 for i in range(len(arr)) ]
+        new_matrix.append(new_list)
     return new_matrix
+
+    #     for i in range(len(arr)):
+    #         new_values = arr[i] ** 2
+    #     new_list.append(new_values)
+    #     new_matrix.append(new_list)
+    # return new_matrix
         
 
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
 
 # new_matrix = square_matrix_simple(matrix)
-# print(new_matrix)
-print(matrix)
-# [[1, 4, 9], [16, 25, 36], [49, 64, 81]]
+# print('new', new_matrix)
+# print('old', matrix)
+# # # [[1, 4, 9], [16, 25, 36], [49, 64, 81]]
