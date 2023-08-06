@@ -110,6 +110,10 @@ class Square:
             # ###
             # ###
         """
-        for num in range(self.__size):
-            print(self.__size * '#')
+        if self.__size== 0:
+            print()
+        else:
+            for num in range(self.__size):
+                print(self.__size * '#')
+
 
