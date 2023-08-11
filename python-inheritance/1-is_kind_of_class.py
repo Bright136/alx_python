@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-0-is_kind_of_class.py - A module for checking whether an object is an 
+0-is_kind_of_class - A module for checking whether an object is an 
 instance of, or if the object is an instance of a class that inherited 
 from, the specified class.
 
