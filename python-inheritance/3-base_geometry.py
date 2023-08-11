@@ -5,7 +5,7 @@
 This module provides classes for instantiating BaseGeometry.
 
 """
-class BaseGeometry():
+class BaseGeometry:
     """
         BaseGeometry - A class representing a basegeometry.
 
