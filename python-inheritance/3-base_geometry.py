@@ -23,8 +23,3 @@ class BaseGeometry():
         default_attrs = dir(super())
         return [attr for attr in default_attrs if attr != '__init_subclass__']
 
-
-bg = BaseGeometry()
-print(bg)
-print(dir(bg))
-print(dir(BaseGeometry))
