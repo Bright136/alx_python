@@ -12,7 +12,7 @@ class BaseGeometry():
         This is an empty class with no attributes
     """
 
-    def __init__(self):
-        pass
+    # def __init__(self):
+    pass
 
 
