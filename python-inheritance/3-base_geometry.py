@@ -1,11 +1,18 @@
 #!/usr/bin/python3
+class CustomDirMeta(type):
+    def __dir__(cls):
+        # Customize the list of attributes and methods shown for the class
+        dir_list = super().__dir__()
+        dir_list.remove('__init_subclass__')
+        return dir_list
 """
+
 3-base_geometry - A module for BaseGeometry .
 
 This module provides classes for instantiating BaseGeometry.
 
 """
-class BaseGeometry():
+class BaseGeometry(metaclass=CustomDirMeta):
     """
         BaseGeometry - A class representing a basegeometry.
 
@@ -22,8 +29,6 @@ class BaseGeometry():
         """
         return [attr for attr in dir(type(self)) if attr != '__init_subclass__']
     
-    def __dir__(cls):
-        return [attr for attr in super().__dir__() if attr != '__init_subclass__']
     
 bg = BaseGeometry()
 print(bg)
