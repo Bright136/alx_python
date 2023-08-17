@@ -42,14 +42,5 @@ class Rectangle(module):
 
     def __str__(self):
         return f"[Rectangle] {self.__width}/{self.__height}"
-    
-    # def __print__(self):
-    #    print(f"{[type(self).__name__]} {self.__width}/{self.__height}")
-    
 
-r = Rectangle(3, 5)
-
-print(r)
-print(r.area())
-print(str(r))
     
