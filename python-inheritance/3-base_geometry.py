@@ -21,7 +21,3 @@ class BaseGeometry:
             returned by dir(), providing a customized view of the instance's attributes.
         """
         return [attr for attr in dir(type(self)) if attr != '__init_subclass__']
-# bg = BaseGeometry()
-# print(bg)
-# print(dir(bg))
-# print(dir(BaseGeometry))
