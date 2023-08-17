@@ -18,31 +18,9 @@ Example:
         print("[{}] {}".format(e.__class__.__name__, e))
 
 """
-class CustomDirMeta(type):
-    """
-    CustomDirMeta - A metaclass for customizing the dir() behavior.
 
-    This metaclass is used to customize the list of attributes and methods shown
-    for classes that inherit from it.
-
-    """
-
-    def __dir__(cls):
-        """
-        __dir__ - Customize the list of attributes and methods shown for the class.
-
-        This method is called when the dir() function is used on a class. It modifies
-        the list of attributes and methods returned by dir() to exclude the
-        '__init_subclass__' attribute.
-
-        :return: A filtered list of attributes and methods for the class.
-        :rtype: list
-        """
-        dir_list = super().__dir__()
-        dir_list.remove('__init_subclass__')
-        return dir_list
     
-class BaseGeometry(metaclass=CustomDirMeta):
+class BaseGeometry():
 
     """
     BaseGeometry class provides a foundation for geometry-related classes.
