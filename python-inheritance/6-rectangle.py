@@ -36,7 +36,7 @@ class Rectangle(module):
         self.__height = height
         self.integer_validator('height', self.__height)
         self.integer_validator('width', self.__width)
-        
+
     def __dir__(self):
         """ Override the default behavior of the dir() function for the class.
             This method is called when the dir() function is used on an instance of the class.
@@ -44,6 +44,15 @@ class Rectangle(module):
             returned by dir(), providing a customized view of the instance's attributes.
         """
         return [attr for attr in dir(type(self)) if attr != '__init_subclass__']
+    
+
+    
+    def __dir__(cls):
+        return [attr for attr in super().__dir__() if attr != '__init_subclass__']
+    
+
+# r =Rectangle(3,  5)
+# print(dir(r))
 
 
 
