@@ -1,5 +1,5 @@
 """
-8-square.py - Module defining the Square class based on Rectangle inheritance.
+8-square - Module defining the Square class based on Rectangle inheritance.
 
 This module imports the Rectangle class from the numeric module named '7-rectangle'.
 It defines a Square class that inherits from Rectangle and demonstrates the usage
@@ -32,13 +32,13 @@ class Square(module):
         Args:
             size (int): The size of the square.
         """
- 
         super().__init__(size, size)
 
-
     def __str__(self):
+        """
+        Get a string representation of the Square.
+        
+        Returns:
+            str: A formatted string describing the square.
+        """
         return f"[Square] {self._Rectangle__width}/{self._Rectangle__height}"
-
-
-
-Square("13")
