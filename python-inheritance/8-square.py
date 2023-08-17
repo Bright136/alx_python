@@ -41,3 +41,4 @@ class Square(module):
 
 
 
+Square("13")
