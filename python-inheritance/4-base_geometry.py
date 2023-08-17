@@ -44,11 +44,5 @@ class BaseGeometry:
             returned by dir(), providing a customized view of the instance's attributes.
         """
         return [attr for attr in dir(type(self)) if attr != '__init_subclass__']
+    
 
-
-# if __name__ == "__main__":
-#     bg = BaseGeometry()
-#     try:
-#         print(bg.area())
-#     except Exception as e:
-#         print("[{}] {}".format(e.__class__.__name__, e))
