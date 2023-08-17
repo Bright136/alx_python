@@ -41,7 +41,15 @@ class Rectangle(module):
         return self.__height * self.__width
 
     def __str__(self):
-        return f"{[type(self).__name__]} {self.__width}/{self.__height}"
+        return f"[Rectangle] {self.__width}/{self.__height}"
+    
+    # def __print__(self):
+    #    print(f"{[type(self).__name__]} {self.__width}/{self.__height}")
     
 
+r = Rectangle(3, 5)
+
+print(r)
+print(r.area())
+print(str(r))
     
