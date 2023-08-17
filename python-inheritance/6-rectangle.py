@@ -36,6 +36,14 @@ class Rectangle(module):
         self.__height = height
         self.integer_validator('height', self.__height)
         self.integer_validator('width', self.__width)
+        
+    def __dir__(self):
+        """ Override the default behavior of the dir() function for the class.
+            This method is called when the dir() function is used on an instance of the class.
+            It filters out the '__init_subclass__' attribute from the list of attributes and methods
+            returned by dir(), providing a customized view of the instance's attributes.
+        """
+        return [attr for attr in dir(type(self)) if attr != '__init_subclass__']
 
 
 
