@@ -5,7 +5,7 @@
 This module provides classes for instantiating BaseGeometry.
 
 """
-class BaseGeometry():
+class BaseGeometry:
     """
         BaseGeometry - A class representing a basegeometry.
 
@@ -20,6 +20,8 @@ class BaseGeometry():
             It filters out the '__init_subclass__' attribute from the list of attributes and methods
             returned by dir(), providing a customized view of the instance's attributes.
         """
-        default_attrs = dir(super())
-        return [attr for attr in default_attrs if attr != '__init_subclass__']
-
+        return [attr for attr in dir(type(self)) if attr != '__init_subclass__']
+# bg = BaseGeometry()
+# print(bg)
+# print(dir(bg))
+# print(dir(BaseGeometry))
