@@ -32,8 +32,8 @@ class Square(module):
         Args:
             size (int): The size of the square.
         """
+ 
         super().__init__(size, size)
-        self.integer_validator(value=size, name='size')
 
 
     def __str__(self):
@@ -41,12 +41,3 @@ class Square(module):
 
 
 
-
-s = Square(13)
-
-print(s)
-print(s.area())
-s = Square("13")
-
-print(s)
-print(s.area())
